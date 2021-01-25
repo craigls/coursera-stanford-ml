@@ -90,8 +90,8 @@ Delta1 = d2' * a1;
 Delta2 = d3' * a2; 
 Theta1_grad = (1 / m) * Delta1;
 Theta2_grad = (1 / m) * Delta2;
-Theta1_grad = Theta1_grad + ((lambda / m ) * Theta1);
-Theta2_grad = Theta2_grad + ((lambda / m ) * Theta2);
+Theta1_grad = Theta1_grad + (lambda / m) * Theta1;
+Theta2_grad = Theta2_grad + (lambda / m) * Theta2;
 
 % -------------------------------------------------------------
 
