@@ -27,7 +27,7 @@ sigma = 0.3;
 steps = [0.01 0.03 0.1 0.3 1 3 10 30];
 
 % Matrix for storing each iteration of C, sigma, error 
-results = zeros(length(steps) * length(steps), 3)
+results = zeros(length(steps) * length(steps), 3);
 
 row = 1;
 
@@ -48,7 +48,7 @@ for i=1:length(steps)
 end
 
 % Find row containing minimum error
-[_, row] = min(results(:, 3))
+[_, row] = min(results(:, 3));
 
 % Set C and sigma to row containing min error
 C = results(row, 1);
